@@ -3,18 +3,43 @@
 	padding: 0;
 	font-family: Century Gothic;
 }
+.main{
+	float:right;
+}
 
-header{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../download.jpeg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+ul li{
+	display: inline-block;
+}
+
+a{
+	text-decoration:none;
+	color: yellow;
+	
+	
+	border: 1px solid #fff;
+	transition:0.6s ease;
+}
+
+a:hover{
+	background-color:#fff;
+	color: yellow;
+}
+
+.title{
+	position:absolute;
+	top:10%;
+	left:45%;
+	transform:translate(-50%,-50%);
+}
+.title h1{
+	color:yellow;
+	font-size:35px;
 }
 
 ul{
-	float:right;
-	list-style-type:none;
-	margin-top:25px;
+	float: right;
+	list-style-type: none;
+	margin-top: auto;
 }
 
 ul li{
@@ -22,7 +47,7 @@ ul li{
 }
 
 ul li a{
-	text-decoration:none;
+	text-decoration: none;
 	color: #fff;
 	padding: 5px 20px;
 	border: 1px solid #fff;
@@ -33,36 +58,16 @@ ul li a:hover{
 	background-color:#fff;
 	color:#000;
 }
-.logo img{
-	float:left;
-	width:200px;
-	height:auto;
-	margin-top:25px;
-	margin-left:25px;
-}
-
-.title{
-	position:absolute;
-	top:20%;
-	left:45%;
-	transform:translate(-50%,-50%);
-}
-.title h1{
-	color:#fff;
-	font-size:70px;
-}
 
 .data {
 	position:absolute;
-	top:50%;
-	left:50%;
+	top:75%;
+	left:45%;
 	transform:translate(-50%,-50%);
 
 }
 
 .data p{
-	color:#fff;
-	font-size:30px;
+	color:yellow;
+	font-size:20px;
 }
-
-
