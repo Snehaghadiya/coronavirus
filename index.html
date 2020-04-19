@@ -5,7 +5,7 @@
 <a href="link.html"><b>ABOUT GLEAMVIZ SIMULATOR</b></a>
 <a href="corona.html"><b>ABOUT CORONAVIRUS</b></a>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/graph.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	
 <script type="text/javascript">
@@ -17,33 +17,49 @@
 
       var data = new google.visualization.DataTable();
       data.addColumn('date', 'Date');
-      data.addColumn('number', 'Actual');
       data.addColumn('number','Predictive');
 
       data.addRows([
-        [new Date(2020, 2,25),  499,354],
-        [new Date(2020, 2,26),  536,510],
-        [new Date(2020, 2,27),  727,691],
-        [new Date(2020, 2,28),  887,895],
-        [new Date(2020, 2,29),  987,1148],
-        [new Date(2020, 2,30),  1024,1234],
-        [new Date(2020, 2,31),  1397,1668],
-        [new Date(2020, 3,1),  1998,2146],
-        [new Date(2020, 3,2),  2543,2586],
-        [new Date(2020, 3,3),  3059,3104],
-	[new Date(2020, 3,4),  3588,3746],
-	[new Date(2020, 3,5),  4289,4453],
-	[new Date(2020, 3,6),  4778,5248],
-	[new Date(2020, 3,7),  5351,5300],
-	[new Date(2020, 3,8),  5916,6253],
-	[new Date(2020, 3,9),  6725,7395],
-	[new Date(2020, 3,10),  7600,8114],
+        [new Date(2020, 2,25), 354],
+        [new Date(2020, 2,26), 510],
+        [new Date(2020, 2,27), 691],
+        [new Date(2020, 2,28), 895],
+        [new Date(2020, 2,29), 1148],
+        [new Date(2020, 2,30), 1234],
+        [new Date(2020, 2,31), 1668],
+        [new Date(2020, 3,1),  2146],
+        [new Date(2020, 3,2),  2586],
+        [new Date(2020, 3,3),  3104],
+	[new Date(2020, 3,4),  3746],
+	[new Date(2020, 3,5),  4453],
+	[new Date(2020, 3,6),  5248],
+	[new Date(2020, 3,7),  5300],
+	[new Date(2020, 3,8),  6253],
+	[new Date(2020, 3,9),  7395],
+	[new Date(2020, 3,10), 8114],
+	[new Date(2020, 3,11), 8405],
+	[new Date(2020, 3,12), 9694],
+	[new Date(2020, 3,13), 11075],
+	[new Date(2020, 3,14), 12502],
+	[new Date(2020, 3,15), 14041],
+	[new Date(2020, 3,16), 15685],
+	[new Date(2020, 3,17), 17406],
+	[new Date(2020, 3,18), 19237],
+	[new Date(2020, 3,19), 21126],
+	[new Date(2020, 3,20), 23131],
+	[new Date(2020, 3,21), 25223],
+	[new Date(2020, 3,22), 27470],
+	[new Date(2020, 3,23), 29903],
+	[new Date(2020, 3,24), 32438],
+	[new Date(2020, 3,25), 35021],
+	[new Date(2020, 3,26), 37734],
+	
 	
         
       ]);
 
       var linearOptions = {
-        title: 'Actual infectious people vs predicted by gleamviz simulator due to coronavirus ',
+        title: 'infectious people predicted by gleamviz till 26th April',
         legend: 'none',
         width: 550,
         height: 300,
@@ -81,6 +97,89 @@
     
    
  </script>
+
+<script type="text/javascript">
+
+ google.charts.load('current', {'packages':['corechart', 'line']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'Date');
+      data.addColumn('number', 'Actual');
+      data.addColumn('number','Predictive')
+     
+
+      data.addRows([
+        [new Date(2020, 2,25),  499,354],
+        [new Date(2020, 2,26),  536,510],
+        [new Date(2020, 2,27),  727,691],
+        [new Date(2020, 2,28),  887,895],
+        [new Date(2020, 2,29),  987,1148],
+        [new Date(2020, 2,30),  1024,1234],
+        [new Date(2020, 2,31),  1397,1668],
+        [new Date(2020, 3,1),  1998,2146],
+        [new Date(2020, 3,2),  2543,2586],
+        [new Date(2020, 3,3),  3059,3104],
+	[new Date(2020, 3,4),  3588,3746],
+	[new Date(2020, 3,5),  4289,4453],
+	[new Date(2020, 3,6),  4778,5248],
+	[new Date(2020, 3,7),  5351,5300],
+	[new Date(2020, 3,8),  5916,6253],
+	[new Date(2020, 3,9),  6725,7395],
+	[new Date(2020, 3,10),  7600,8114],
+	[new Date(2020, 3,11),  8446,8405],
+	[new Date(2020, 3,12), 9205,9694 ],
+	[new Date(2020, 3,13), 10453,11075 ],
+	[new Date(2020, 3,14),  11487,12502],
+	[new Date(2020, 3,15),  12370,14041],
+	[new Date(2020, 3,16),  13430,15685],
+	[new Date(2020, 3,17), 14352,17406 ],
+	[new Date(2020, 3,18),  16365,19237],
+	[new Date(2020, 3,19),  18450,20012],
+        
+      ]);
+
+      var linearOptions = {
+        title: 'Actual infectious people vs predicted by gleamviz ',
+        legend: 'none',
+        width: 550,
+        height: 300,
+        hAxis: {
+          title: 'Date'
+        },
+        vAxis: {
+          title: 'infectious count',
+          ticks: [0, 2000, 4000, 6000, 8000,10000]
+        }
+      };
+
+      var logOptions = {
+        title: 'World Population Since 1400 A.D. in Log Scale',
+        legend: 'none',
+        width: 450,
+        height: 500,
+         hAxis: {
+          title: 'Date'
+        },
+        vAxis: {
+          title: 'Population (millions)',
+          scaleType: 'log',
+          ticks: [0, 1000, 2000, 4000, 6000]
+        }
+      };
+
+      var linearChart = new google.visualization.LineChart(document.getElementById('new_div'));
+       linearChart.draw(data, linearOptions);
+
+      var logChart = new google.visualization.LineChart(document.getElementById('log_div'));
+      logChart.draw(data, logOptions);
+    }
+
+    
+   
+ </script>
 </head>   
 <style>	
 body {
@@ -93,14 +192,15 @@ body {
 	
    <body>
 	<div class="title">
-	<h1>COVID-19</h1>
+	<h1>Actual infectious people vs predicted by gleamviz</h1>
 	</div>
    
-   <div id="linear_div" style="margin-left:350px; margin-top: 140px; width: 650px; height: 200px"></div> 
+   <div id="linear_div" style="margin-left:90px; margin-top: 140px; width: 150px; height: 200px"></div> 
+   <div id="new_div" style="margin-left:650px; margin-top: -200px; width: 150px; height: 200px"></div> 
    <div class="data">
-			<p><b>Today's predictive count of infectious people using gleamviz simulator is 10126<b><br><br></p>
+			<p><b>Today's predictive count of infectious people using gleamviz simulator is 20012<b><br><br></p>
 
-			<p><b>Today's Actual count of infectious people is 7997<b></p>
+			<p><b>Today's Actual count of infectious people is 18450<b></p>
 		</div>
    
    
